@@ -4,8 +4,6 @@ import com.google.gson.Gson;
 import org.hljcma.di.pojo.inputdi;
 import org.hljcma.di.pojo.outputdi;
 import org.hljcma.di.service.DiRedisService;
-import org.hljcma.di.pojo.di;
-import org.hljcma.di.service.datatypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -25,10 +23,6 @@ import com.alibaba.otter.canal.client.*;
 
 @Component
 public class main implements CommandLineRunner {
-
-     @Autowired
-     datatypeService datatypeservice;
-
      @Autowired
      DiRedisService redisService;
 
